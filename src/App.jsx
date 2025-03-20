@@ -1,25 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import Hero from "./sections/Hero/Hero";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Hero />
+      <h2>Work Experience</h2>
+      <h2>Education</h2>
+      <h2>Publications</h2>
+      <h2>Primary Skills</h2>
+      <h2>Projects</h2>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
