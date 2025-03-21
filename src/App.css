@@ -5,6 +5,12 @@
     --form-text-color: #555;
     --footer-text-color: #888;
     --border-color: #e5e7eb;
+    --navbar-bg: #222;
+    --navbar-text-color: #fff;
+    --icon-width-big : 38px;
+    --icon-width : 30px;
+    --icon-width-md : 25px;
+    --icon-width-small : 20px;
   }
   
   [data-theme='dark'] {
@@ -14,14 +20,26 @@
     --form-text-color: #fff;
     --footer-text-color: #bbb;
     --border-color: #fff;
+    --navbar-bg: #fff;
+    --navbar-text-color: #222;
+    --icon-width-big : 48px;
+    --icon-width : 40px;
+    --icon-width-md : 35px;
+    --icon-width-small : 30px;  
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+
   /** Ta default einai general & phone view*/
   body {
     background-color: var(--background-color);
+    transition: background-color 0.3s ease, text-color 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     justify-content: center;
     margin: 0 20px 60px 20px;
+    
   }
   
   #root {
@@ -33,6 +51,7 @@
   h1,
   h2,
   h3,
+  h4,
   p {
     color: var(--text-color);
     margin: 0;

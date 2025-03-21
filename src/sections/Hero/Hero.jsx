@@ -9,7 +9,7 @@ import GitHubIconLight from "../../assets/icons/icons8-github-light.svg";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   const mailIcon = theme === "light" ? mailIconLight : mailIconDark;
   const linkedInIcon = theme === "light" ? LinkedinIconLight : LinkedinIconDark;
@@ -22,7 +22,6 @@ function Hero() {
           className={styles.profilePic}
           src={profilePic}
           alt="My Profile Picture Goes Here"
-          onClick={toggleTheme}
         />
         <div className={styles.info}>
           <h1 className="sectionTitle">Manos Koumakis</h1>

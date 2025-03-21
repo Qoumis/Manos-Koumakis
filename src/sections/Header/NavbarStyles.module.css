@@ -1,0 +1,138 @@
+
+.navbar{
+    position:fixed; 
+    left: 0;
+    right: 0; 
+    
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.90;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    ul{
+        flex: 1;
+        list-style: none;
+        text-align: center;
+        padding-right: 5%;
+    }
+
+    ul li{
+        display: inline-block;
+        margin: 0 100px;
+    }
+
+    ul li:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+
+    ul li:active{
+        transform: scale(0.95);
+    }
+
+    ul li a{
+        text-decoration: none;
+    }
+
+    .themeMode{
+        width: var(--icon-width-big);
+        right: 2%;
+        position: absolute;
+    }
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    
+  }
+
+  .navbar.active {
+    background-color: var(--navbar-bg);
+    h3{
+        color: var(--navbar-text-color);
+    }
+  }
+
+  @media (width <= 1400px){
+    .navbar{
+        ul li {
+            margin: 0 90px;
+        }
+
+        .themeMode{
+            width: var(--icon-width);
+        }
+    }
+}
+
+  @media (width <= 800px){
+    .navbar{
+        ul{
+            padding-right: 10%;
+        }
+
+        ul li{
+            margin: 0 68px;
+        }
+    }
+}
+
+@media (width <= 655px){
+    .navbar{
+        ul{
+            padding-right: 5%;
+        }
+
+        ul li{
+            margin: 0 60px;
+            
+        }
+        .themeMode{
+            width: var(--icon-width-md);
+        }
+    }
+}
+
+@media (width <= 570px){
+    
+    .navbar{
+
+        ul li{
+            margin: 0 40px;
+        }
+    }
+}
+
+
+
+@media (width <= 450px){
+    .navbar{
+        ul{
+            text-align: start;
+            padding-right: 0;
+        }
+
+        ul li{
+            margin: 0 30px;
+        }
+        .themeMode{
+            width: var(--icon-width-small);
+        }
+    }
+}
+
+@media (width <= 390px){
+    .navbar{
+        ul{
+            text-align: start;
+            padding-left: 10px;
+        }
+
+        ul li{
+            margin: 0 25px;
+        }
+    }
+}
