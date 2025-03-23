@@ -87,6 +87,11 @@
     cursor: pointer;
   }
 
+  .linkIcon{
+    width: 12px;
+    margin-left: 3px;
+  }
+
   @media (width >= 1400px){
     #root{
       gap : 100px;
@@ -102,6 +107,10 @@
     }
     p{
       font-size: 0.9rem;
+    }
+
+    .linkIcon{
+      width: 15px;
     }
   }
 
@@ -121,5 +130,10 @@
     }
     p{
       font-size: 0.85rem;
+    }
+
+    .linkIcon{
+      width: 13px;
+
     }
   }
