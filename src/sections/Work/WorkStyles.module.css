@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.workContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.workComponent{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .companyName{
+       font-size: 1.1rem;
+        font-weight: 650;
+        margin-bottom: 5px;
+        
+    }
+
+    .position{
+        font-size: 0.9rem;
+        font-weight: 450;
+        margin-bottom: 8px;
+    }
+
+    /*container for company name, workplace & period*/
+    .inlineContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .period{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--secondary-text-color);
+        font-family: 'Roboto Flex', sans-serif;
+    }
+
+
+
+
+}
+
+@media (width <= 1400px){
+    .workComponent{
+        .companyName{
+            font-size: 1rem;
+        }
+        .position{
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media (width <= 800px){
+    .workComponent{
+
+        .companyName{
+            font-size: 0.9rem;
+        }
+        .position{
+            font-size: 0.8rem;
+        }
+
+
+        .period{
+            font-size: 0.85rem;
+        }
+    }
+}
+
+
+
+
+/** unused styles 
+ul {
+    padding-left: 0; 
+    list-style-type: none;
+  }
+
+  li::before {
+    content: "•"; 
+    font-size: 20px;
+    color: var(--secondary-text-color); 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: 5px; 
+  }*/

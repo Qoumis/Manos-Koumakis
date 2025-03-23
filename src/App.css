@@ -1,9 +1,7 @@
 :root {
     --background-color: #fff;
-    --project-card-bg: #ffffff00;
     --text-color: #222;
-    --form-text-color: #555;
-    --footer-text-color: #888;
+    --secondary-text-color: rgb(143, 143, 143);
     --border-color: #e5e7eb;
     --navbar-bg: #222;
     --navbar-text-color: #fff;
@@ -15,10 +13,8 @@
   
   [data-theme='dark'] {
     --background-color: #222;
-    --project-card-bg: #fff;
     --text-color: #fff;
-    --form-text-color: #fff;
-    --footer-text-color: #bbb;
+    --secondary-text-color: rgb(199, 199, 199);
     --border-color: #fff;
     --navbar-bg: #fff;
     --navbar-text-color: #222;
@@ -52,13 +48,15 @@
   h2,
   h3,
   h4,
+  h5,
+  h6,
   p {
     color: var(--text-color);
     margin: 0;
     padding: 0;
   }
 
-  h1,h2,h3{
+  h1,h2,h3,h4{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
     
@@ -66,8 +64,11 @@
   h2{
     font-size: 1rem;
   }
-  h3{
-    font-size: 0.9rem;
+  h3,h4{
+    font-size: 0.8rem;
+  }
+  h5,h6{
+    font-family: 'Roboto Flex', sans-serif;
   }
 
   p{
@@ -86,7 +87,6 @@
     cursor: pointer;
   }
 
-  /*mexri 800*/
   @media (width >= 1400px){
     #root{
       gap : 100px;
