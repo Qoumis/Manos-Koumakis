@@ -3,13 +3,13 @@
     flex-direction: column;
 }
 
-.workContainer{
+.workContainer, .educationContainer{
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.workComponent{
+.workComponent, .educationComponent{
     display: flex;
     flex-direction: column;
 
@@ -22,11 +22,13 @@
         text-decoration: underline;
     }
 
-    .companyName{
+    .companyName, .institutionName{
        font-size: 1.1rem;
         font-weight: 650;
         margin-bottom: 5px;
-        
+    }
+    .institutionName{
+        margin-bottom: 8px;
     }
 
     .position{
@@ -35,12 +37,18 @@
         margin-bottom: 8px;
     }
 
-    /*container for company name, workplace & period*/
+    /*container for company & education name-period*/
     .inlineContainer{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .columnContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
     .period{
@@ -50,14 +58,11 @@
         font-family: 'Roboto Flex', sans-serif;
     }
 
-
-
-
 }
 
 @media (width <= 1400px){
-    .workComponent{
-        .companyName{
+    .workComponent, .educationComponent{
+        .companyName, .institutionName{
             font-size: 1rem;
         }
         .position{
@@ -67,9 +72,9 @@
 }
 
 @media (width <= 800px){
-    .workComponent{
+    .workComponent, .educationComponent{
 
-        .companyName{
+        .companyName, .institutionName{
             font-size: 0.9rem;
         }
         .position{
