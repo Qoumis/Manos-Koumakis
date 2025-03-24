@@ -1,0 +1,53 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skillComponent{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    width: fit-content;
+    min-width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgb(48, 47, 47);
+    border-radius: 5px;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 2px 4px 2px 4px;
+
+    color : white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 0.75rem;
+    cursor: default;
+
+    .skillIcon{
+        width: 24px;
+    }
+}
+
+.invertTheme{
+    filter: invert(1);
+}
+
+@media (width <= 800px){
+    .skillComponent{
+        
+        font-size: 0.7rem;
+        .skillIcon{
+            width: 20px;
+        }
+    }
+}

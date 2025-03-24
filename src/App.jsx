@@ -4,6 +4,7 @@ import NavBar from "./sections/Header/Navbar";
 import Work from "./sections/Work/Work";
 import Education from "./sections/Education/Education";
 import Publications from "./sections/Publications/Publications";
+import Skills from "./sections/Skills/Skills";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <Hero />
       <Work />
       <Education />
+      <Skills />
       <Publications />
-      <h2>Primary Skills</h2>
       <h2 id="projects">Projects</h2>
     </>
   );
