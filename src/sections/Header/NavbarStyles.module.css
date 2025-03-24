@@ -68,7 +68,7 @@
     }
 }
 
-  @media (width <= 800px){
+  @media (width < 800px){
     .navbar{
         ul{
             padding-right: 10%;

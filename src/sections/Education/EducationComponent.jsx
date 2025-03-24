@@ -6,7 +6,6 @@ import linkIconLight from "../../assets/icons/icons8-external-link-light.svg";
 
 function EducationComponent({ institute, degree, period, gpa, thesis }) {
   const { theme } = useTheme();
-
   const linkIcon = theme === "light" ? linkIconLight : linkIconDark;
 
   return (

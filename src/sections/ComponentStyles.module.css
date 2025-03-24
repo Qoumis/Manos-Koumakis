@@ -3,13 +3,13 @@
     flex-direction: column;
 }
 
-.workContainer, .educationContainer{
+.workContainer, .educationContainer, .publicationsContainer{
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.workComponent, .educationComponent{
+.workComponent, .educationComponent, .publicationComponent{
     display: flex;
     flex-direction: column;
 
@@ -31,10 +31,19 @@
         margin-bottom: 8px;
     }
 
-    .position{
+    .position, .authorNames{
         font-size: 0.9rem;
         font-weight: 450;
         margin-bottom: 8px;
+    }
+    .authorNames{
+        margin-bottom: 5px;
+    }
+
+    .publicationTitle{
+        margin-bottom: 3px;
+        font-weight: 650;
+        font-size: 0.95rem;
     }
 
     /*container for company & education name-period*/
@@ -61,28 +70,32 @@
 }
 
 @media (width <= 1400px){
-    .workComponent, .educationComponent{
+    .workComponent, .educationComponent, .publicationComponent{
         .companyName, .institutionName{
             font-size: 1rem;
         }
-        .position{
+        .position, .authorNames{
             font-size: 0.85rem;
+        }
+        .publicationTitle{
+            font-size: 0.9rem;
         }
     }
 }
 
 @media (width <= 800px){
-    .workComponent, .educationComponent{
+    .workComponent, .educationComponent, .publicationComponent{
 
         .companyName, .institutionName{
             font-size: 0.9rem;
         }
-        .position{
+        .position, .authorNames{
             font-size: 0.8rem;
         }
-
-
         .period{
+            font-size: 0.85rem;
+        }
+        .publicationTitle{
             font-size: 0.85rem;
         }
     }
