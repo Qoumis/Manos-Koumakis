@@ -92,7 +92,7 @@
     margin-left: 3px;
   }
 
-  @media (width >= 1400px){
+  @media (width > 1400px){
     #root{
       gap : 100px;
     }
@@ -115,7 +115,7 @@
   }
 
   /** apo 800 ews 1400 */
-  @media (800px <= width <= 1400px){
+  @media (800px < width <= 1400px){
     #root{
       gap : 80px;
     }

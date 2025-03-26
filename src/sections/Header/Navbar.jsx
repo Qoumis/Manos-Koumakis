@@ -57,7 +57,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a href="#skills">
+          <a href="#education">
             <h3>Skills</h3>
           </a>
         </li>
