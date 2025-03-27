@@ -9,11 +9,35 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectComponent
           title="Profit Track"
-          description="Desktop application for managing the finances of a small bussiness"
+          description="Desktop application designed for businesses such as restaurants, shops, hotels or the accountancy offices of these businesses to efficiently track and manage finances.
+
+Users can log daily expenses across key categories (such as providers, staff, infrastructure maintenance, fixed expenses or any other category that the customer might need), monitor outstanding debts, and record daily revenues. 
+
+The application also provides yearly financial statistics, including incurred vs. covered expenses, total revenue, cash balance, and net income, helping business owners keep track of their financial status."
+          skills={[
+            "Electron",
+            "JavaScript",
+            "jQuery",
+            "Node.js",
+            "SQLite",
+            "Bootstrap 4",
+          ]}
+          hasGap={false}
         />
         <ProjectComponent
           title="Wage Manager"
-          description="Desktop application for managing the working hours of employees"
+          description="Desktop application designed to simplify employee wage calculations for businesses. Users can define job roles with set working hours, hourly & overtime rates, and then assign employees to their respective roles.
+
+The app allows daily tracking of work hours and automatically calculates each employee’s total hours and monthly salary, helping business owners to efficiently manage payroll and ensure accurate wage payments by reducing errors and time spent on calculations."
+          skills={[
+            "Electron",
+            "JavaScript",
+            "jQuery",
+            "Node.js",
+            "SQLite",
+            "Bootstrap 4",
+          ]}
+          hasGap={true}
         />
         <ProjectComponent
           title="GPT•LODS+"
@@ -24,6 +48,8 @@ The Annotation and Enrichment Service is an information extraction service that 
 Fact Checking and Triple Generation is a service where a user sends a query to ChatGPT requesting it to provide the answer in RDF N-triples format, by using DBpedia ontology.
 After receiving the response of ChatGPT (in RDF format), the user can export the triples and/or validate the facts by using one or more RDF datasets (such as DBpedia), SPARQL queries, word embeddings and sentence similarity methods."
           link="http://83.212.101.188:8081/GPToLODSplus/index.html"
+          skills={["JavaScript", "Jquery", "HTML", "CSS", "REST API", "Java"]}
+          hasGap={false}
         />
         <ProjectComponent
           title="GPT•LODS+ REST API"
@@ -32,11 +58,24 @@ After receiving the response of ChatGPT (in RDF format), the user can export the
 The web application provides all it's services through a REST API, including several available requests either for validating ChatGPT responses and/or generating triples (by also using Entity Recognition).
 This UI allows developers to view the API endpoints, make requests, and see responses directly from the browser before using the service programmatically."
           link="http://83.212.101.193:8090/swagger-ui/index.html#/"
+          skills={["Java", "Spring Boot", "Swagger", "REST API"]}
+          hasGap={true}
         />
         <ProjectComponent
           title="Alpha Compiler & VM."
           description="Alpha Compiler is a fully functional compiler and virtual machine (AVM) for the 'Alpha' programming language. The compiler translates Alpha source code into machine code, while the virtual machine provides a C based execution environment for running Alpha programs."
           link="https://github.com/Qoumis/AlphaCompiler"
+          skills={[
+            "C",
+            "Flex",
+            "Bison",
+            "Yacc",
+            "Makefile",
+            "Git",
+            "Compilers",
+            "VM",
+          ]}
+          hasGap={true}
         />
         <ProjectComponent
           title="AWS-Drone-Delivery-Project"
@@ -44,6 +83,16 @@ This UI allows developers to view the API endpoints, make requests, and see resp
 
 This project aims to develop an efficient drone delivery service system involving retailers, drone delivery providers, and clients. Clients request last-mile delivery services from providers with a limited number of drones. We intent to create a scheduling algorithm to efficiently serve these requests. Time is divided into rounds, with a fixed number of requests received at the start of each round. An auction determines which requests are fulfilled and at what cost, with unfulfilled requests carried over to the next round."
           link="https://github.com/Qoumis/AWS-Drone-Delivery-Project"
+          skills={[
+            "AWS",
+            "Python",
+            "Flask",
+            "Lambda",
+            "EC2",
+            "Petri Nets",
+            "Game Theory",
+          ]}
+          hasGap={false}
         />
       </div>
     </section>
