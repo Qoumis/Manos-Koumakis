@@ -5,17 +5,30 @@ import Work from "./sections/Work/Work";
 import Education from "./sections/Education/Education";
 import Publications from "./sections/Publications/Publications";
 import Skills from "./sections/Skills/Skills";
+import Projects from "./sections/Projects/Projects";
+import VideoModal from "./Modal/VideoModal";
+
+import { useState } from "react";
 
 function App() {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
   return (
     <>
       <NavBar />
       <Hero />
-      <Work />
       <Education />
       <Skills />
       <Publications />
-      <h2 id="projects">Projects</h2>
+      <Projects click={setSelectedVideo} />
+
+      {/* Conditionally render the VideoModal */}
+      {selectedVideo && (
+        <VideoModal
+          url={selectedVideo}
+          onClose={() => setSelectedVideo(null)}
+        />
+      )}
     </>
   );
 }

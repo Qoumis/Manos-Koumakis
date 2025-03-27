@@ -9,6 +9,10 @@
     --icon-width : 30px;
     --icon-width-md : 25px;
     --icon-width-small : 20px;
+
+    --modal-background-color: rgba(0,0,0,0.6);
+    --close-btn-color: #aaaaaa;
+    --close-btn-hover-color: #000;
   }
   
   [data-theme='dark'] {
@@ -22,6 +26,10 @@
     --icon-width : 40px;
     --icon-width-md : 35px;
     --icon-width-small : 30px;  
+
+    --modal-background-color: rgba(88, 88, 88, 0.4);
+    --close-btn-color: #c0c0c0;
+    --close-btn-hover-color: #707070;
   }
   
   html {

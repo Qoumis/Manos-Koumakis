@@ -9,7 +9,7 @@ function Work() {
       <div className={styles.workContainer}>
         <WorkComponent
           name="Google"
-          link="https://deadlock.wiki/Level"
+          link=""
           position="Backend Developer"
           period="January 2024 - Present"
           description="I am a backend developer at Deadlock. I am responsible for developing and maintaining the backend of the Level project. I am also responsible for the deployment of the project on AWS. 
@@ -17,7 +17,7 @@ function Work() {
         />
         <WorkComponent
           name="Samsung"
-          link="https://deadlock.wiki/Level"
+          link=""
           position="Software Engineer"
           period="Febrauary 2024 - March 2026"
           description="I am a backend developer at Deadlock. I am responsible for developing and maintaining the backend of the Level project."

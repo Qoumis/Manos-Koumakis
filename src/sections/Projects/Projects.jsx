@@ -2,7 +2,10 @@ import React from "react";
 import styles from "./ProjectStyles.module.css";
 import ProjectComponent from "./ProjectComponent";
 
-function Projects() {
+import profitTrackVideo from "../../assets/videos/kar.mp4";
+import wageManagerVideo from "../../assets/videos/kar.mp4";
+
+function Projects({ click }) {
   return (
     <section id="projects" className={styles.container}>
       <h2 className="sectionTitle">Projects</h2>
@@ -23,6 +26,8 @@ The application also provides yearly financial statistics, including incurred vs
             "Bootstrap 4",
           ]}
           hasGap={false}
+          videoUrl={profitTrackVideo}
+          click={click} //just pass the function through the tree to lift it to the top level
         />
         <ProjectComponent
           title="Wage Manager"
@@ -38,6 +43,8 @@ The app allows daily tracking of work hours and automatically calculates each em
             "Bootstrap 4",
           ]}
           hasGap={true}
+          videoUrl={wageManagerVideo}
+          click={click}
         />
         <ProjectComponent
           title="GPT•LODS+"

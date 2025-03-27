@@ -4,12 +4,27 @@ import { useTheme } from "../../common/ThemeContext";
 import linkIconDark from "../../assets/icons/icons8-external-link-dark.svg";
 import linkIconLight from "../../assets/icons/icons8-external-link-light.svg";
 
-function ProjectComponent({ title, description, link, skills, hasGap }) {
+//hasGap is used to align the skills container to the bottom of the project component (only for the components that need it)
+function ProjectComponent({
+  title,
+  description,
+  link,
+  skills,
+  hasGap,
+  videoUrl,
+  click,
+}) {
   const { theme } = useTheme();
   const linkIcon = theme === "light" ? linkIconLight : linkIconDark;
 
+  const hasVideo =
+    videoUrl !== undefined && videoUrl !== null && videoUrl !== "";
+
   return (
-    <div className={styles.projectComponent}>
+    <div
+      className={styles.projectComponent}
+      onClick={hasVideo ? () => click(videoUrl) : null} //mono auta me video url tha exoun modal
+    >
       <a href={link} target="_blank">
         <h4 className={styles.projectTitle}>
           {title}
