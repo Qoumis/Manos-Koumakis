@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./ProjectStyles.module.css";
 import ProjectComponent from "./ProjectComponent";
 
-import profitTrackVideo from "../../assets/videos/kar.mp4";
-import wageManagerVideo from "../../assets/videos/kar.mp4";
+import profitTrackVideo from "../../assets/videos/profitTrackDemo.mp4";
+import wageManagerVideo from "../../assets/videos/wageManagerDemo.mp4";
 
 function Projects({ click }) {
   return (

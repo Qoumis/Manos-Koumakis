@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { useState, useEffect } from "react";
-import { X } from "lucide-react";
+import { X, Pause } from "lucide-react";
 import styles from "./ModalStyles.module.css";
 
 function VideoModal({ url, onClose }) {
@@ -57,7 +57,9 @@ function VideoModal({ url, onClose }) {
               width="100%"
               height="100%"
               onClick={handleClick}
+              volume={0.5}
             />
+            {!playing && <Pause color="#404040" className={styles.pause} />}
           </div>
         </div>
       </div>
