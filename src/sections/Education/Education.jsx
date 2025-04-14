@@ -11,7 +11,7 @@ function Education() {
           institute="University of Crete, Computer Science Department"
           degree="Bachelor of Science - BSc, Computer Science"
           period="July 2024"
-          gpa="Grade: 7.82/10"
+          gpa="Grade: 7.82 / 10.0"
           thesis="Thesis: A Chat Application for Enriching and Validating ChatGPT Responses through Knowledge Graphs."
         />
       </div>

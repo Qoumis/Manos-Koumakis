@@ -15,6 +15,7 @@
 
         position: relative;
         top: -35px;
+        left: 20px;
     }
 
     .info{
@@ -68,9 +69,10 @@
 @media (width <= 800px){
     .container{
         .profilePic{
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 130px;
+            max-height: 130px;
             top: -5px;
+            left: 0px;
         }
     }
 }

@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import profilePic from "../../assets/logos/profile.png";
+import profilePic from "../../assets/logos/pic.png";
 import mailIconDark from "../../assets/icons/icons8-mail-dark.png";
 import LinkedinIconDark from "../../assets/icons/icons8-linked-in-dark.svg";
 import GitHubIconDark from "../../assets/icons/icons8-github-dark.svg";
