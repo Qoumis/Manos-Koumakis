@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://github.com/Qoumis/Manos-Koumakis/sitemap.xml
