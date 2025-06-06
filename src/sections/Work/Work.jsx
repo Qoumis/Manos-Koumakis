@@ -8,19 +8,11 @@ function Work() {
       <h2 className="sectionTitle">Work Experience</h2>
       <div className={styles.workContainer}>
         <WorkComponent
-          name="Google"
-          link=""
-          position="Backend Developer"
-          period="January 2024 - Present"
-          description="I am a backend developer at Deadlock. I am responsible for developing and maintaining the backend of the Level project. I am also responsible for the deployment of the project on AWS. 
-          I have gained experience in working with AWS services such as EC2, S3, and RDS. I have also worked with Docker and Docker Compose to containerize the application."
-        />
-        <WorkComponent
-          name="Samsung"
-          link=""
-          position="Software Engineer"
-          period="Febrauary 2024 - March 2026"
-          description="I am a backend developer at Deadlock. I am responsible for developing and maintaining the backend of the Level project."
+          name="European Dynamics"
+          link="https://www.eurodyn.com/"
+          position="Junior Developer"
+          period="June 2025 - Present"
+          description="Currently onboarding as a Junior Developer, with a future focus on backend development using tools like Java, Quarkus, Docker, PostgreSQL, and REST APIs. I will also contribute to frontend projects using Angular. My responsibilities will include developing software applications, preparing technical documentation (e.g., architecture and design documents, user and installation manuals, Javadoc), and supporting the full development cycle of web applications—from analysis and design to testing."
         />
       </div>
     </section>
